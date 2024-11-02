@@ -16,11 +16,11 @@ public class LeaveRequest {
     private Long fileId;
     private LocalDate startDate;
     private LocalDate endDate;
-    private LeaveStatus status;
-    private Contractor contractor;  // For relationship mapping
-    private Files file;  // For relationship mapping
+    private Decision decision;
+    private Contractor contractor;
+    private Files file;
 
-    public enum LeaveStatus {
+    public enum Decision {
         APPROVED, DENIED
     }
 }

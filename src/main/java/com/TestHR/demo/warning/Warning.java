@@ -14,14 +14,14 @@ public class Warning {
     private Long contractorId;
     private LocalDateTime dateIssue;
     private WarningReason reason;
-    private WarningStatus status;
-    private Contractor contractor;  // For relationship mapping
+    private WarningState state;
+    private Contractor contractor;
 
     public enum WarningReason {
         LATE, ABSENT
     }
 
-    public enum WarningStatus {
+    public enum WarningState {
         APPEALED, ACTIVE, REMOVED, FINAL
     }
 }

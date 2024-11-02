@@ -4,6 +4,7 @@ import com.TestHR.demo.contractor.Contractor;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -12,10 +13,10 @@ import java.time.LocalDate;
 public class Hearings {
     private Long hearingsId;
     private Long contractorId;
-    private LocalDate scheduleDate;
+    private LocalDateTime scheduleDate;
     private HearingOutcome outcome;
     private String reason;
-    private Contractor contractor;  // For relationship mapping
+    private Contractor contractor;
 
     public enum HearingOutcome {
         NULL, SUSPENDED, CLEARED

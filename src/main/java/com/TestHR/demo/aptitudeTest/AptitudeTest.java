@@ -2,8 +2,7 @@ package com.TestHR.demo.aptitudeTest;
 
 import com.TestHR.demo.user.User;
 import lombok.*;
-
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -12,7 +11,7 @@ import java.time.LocalDate;
 public class AptitudeTest {
     private Long aptitudeTestId;
     private Long userId;
-    private Integer testMark;
-    private LocalDate testDate;
-    private User user;  // For relationship mapping
+    private int testMark;
+    private LocalDateTime testDate;
+    private User user;
 }

@@ -4,6 +4,7 @@ import com.TestHR.demo.user.User;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -14,9 +15,9 @@ public class Files {
     private Long userId;
     private String fileType;
     private FileCategory category;
-    private LocalDate dateAdded;
+    private LocalDateTime dateAdded;
     private String path;
-    private User user;  // For relationship mapping
+    private User user;
 
     public enum FileCategory {
         TIMESHEET, USER_DOCUMENTS, CONTRACT, LEAVE_FORM, PROJECT, OTHER

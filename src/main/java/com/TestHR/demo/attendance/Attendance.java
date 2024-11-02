@@ -13,10 +13,10 @@ public class Attendance {
     private Long contractorId;
     private LocalDateTime timeIn;
     private LocalDateTime timeOut;
-    private AttendanceStatus status;
-    private Contractor contractor;  // For relationship mapping
+    private RegisterStatus register;
+    private Contractor contractor;
 
-    public enum AttendanceStatus {
+    public enum RegisterStatus {
         PRESENT, ABSENT, LATE
     }
 }

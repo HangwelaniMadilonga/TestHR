@@ -15,7 +15,7 @@ public class Contractor {
     private LocalDate startDate;
     private LocalDate endDate;
     private ContractorStatus status;
-    private User user;  // For relationship mapping
+    private User user;
 
     public enum ContractorStatus {
         EXTERNAL, SUSPENDED, ACTIVE, ON_LEAVE
